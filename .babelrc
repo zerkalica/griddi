@@ -1,0 +1,29 @@
+{
+    "presets": [["es2015"], "stage-0"],
+    "plugins": [
+        "syntax-flow",
+        ["module-resolver", {
+            "root": ["", "./modules"],
+            "alias": {
+                "griddi": "./src"
+            }
+        }],
+        ["transform-metadata", {
+            "jsxPragma": "__h",
+            "typeNameStrategy": "typeName",
+            "reflectImport": "reactive-di/CustomReflect"
+        }],
+        ["transform-react-jsx", {
+            "pragma": "__h"
+        }],
+        "transform-decorators-legacy",
+        "transform-flow-strip-types"
+    ],
+    "env": {
+        "development": {
+            "plugins": [
+                "espower"
+            ]
+        }
+    }
+}
