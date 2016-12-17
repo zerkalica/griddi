@@ -8,5 +8,15 @@
 2. npm start
 3. open http://localhost:8080
 
-## Features
+## Roadmap
 
+- [ ] MVP
+    - [ ] Two panels view
+    - [ ] 3 Columns per panel
+    - [ ] Loading from fetch
+    - [ ] Big collection optimisations
+
+- [ ] Milestone 1
+    - [ ] Cursor position tracking
+    - [ ] Panel focus tracking
+    - [ ] Copy file from active panel to passive
